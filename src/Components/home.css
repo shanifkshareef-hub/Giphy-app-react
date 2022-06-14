@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-tag{
+   
+   
+    float: left;
+    margin-left: 50px;
+    margin-top:20px;
+}
+.close-button{
+    
+
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+   
+}
+.header{
+    height: 60px;
+    width: 100%;
+    background:rgb(252 252 252);
+    position: fixed;
+    top: 0;
+}
+.input{
+    height: 200px;
+   width: 100%;
+   border: none;
+}
+.avatar-div{
+    float: left;
+    
+    margin-left: 30px;
+}
+.input-div{
+    float: left;
+    width: 85%;
+    margin-left: 20px;
+}
+
+.large-image{
+   
+    
+    border: 10px;
+    width: 63%;
+    border: 26px;
+    position: relative;
+    margin-left: 217px;
+
+    height: 262px;
+   
+}
+.image-div{
+    display: flex;
+   height: 100px;
+    width: 100%;
+    
+}
+
+.buttons-div{
+    align-items: center;
+    
+    padding-left: 44px;
+}
+
+
+.buttons{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 120px;
+    border: none;
+    cursor: pointer;
+    
+}
+.buttons-side{
+    padding: 20px;
+}
+.user-icon{
+
+    font-size: 200px;
+    color: gray;
+    
+}
+.session{
+    padding-top: 5em;
+}
+.user-icon{
+  color: #0000000d; 
+}

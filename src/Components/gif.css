@@ -1,0 +1,29 @@
+.main{
+    height: 600px;
+    width: 400px;
+    background: #f8f5f5;
+    overflow:hidden;
+    overflow-y: scroll;
+    margin-left: 252px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.input{
+    height: 35px;
+    width: 85%;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.gif-view{
+    margin-left: 7px;
+    margin-top: 15px;
+    width: 95%;
+    cursor: pointer;
+}
+.search{
+    width: 38px;
+    border: none;
+    cursor: pointer;
+}
