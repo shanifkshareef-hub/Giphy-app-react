@@ -16,6 +16,7 @@
     float: right;
     margin-right: 20px;
     margin-top: 15px;
+    border: none;
    
 }
 .header{
@@ -25,7 +26,7 @@
     position: fixed;
     top: 0;
 }
-.input{
+.input-msg{
     height: 200px;
    width: 100%;
    border: none;
@@ -62,7 +63,7 @@
 
 .buttons-div{
     align-items: center;
-    
+    margin-top: 100px;
     padding-left: 44px;
 }
 
@@ -90,4 +91,30 @@
 }
 .user-icon{
   color: #0000000d; 
+}
+
+.icon1{
+    margin-right: 40px;
+  
+    color: #6e92d4;
+}
+.icon2{
+    margin-right: 40px;
+  
+    color: #f55959;
+}
+.icon3{
+    margin-right: 40px;
+  
+    color: #6e92d4;
+}
+.icon4{
+    margin-right: 40px;
+  
+    color: #fb5454;
+}
+.close-icon{
+    font-size: 30px;
+    color: #89898991;
+    cursor: pointer;
 }
