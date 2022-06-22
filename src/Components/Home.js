@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import './home.css'
 import { useContext } from 'react'
 import { gifContext } from "../Context/GifContext"
@@ -8,13 +8,19 @@ import { gifClickContext } from '../Context/gifClickContext'
 function Home() {
 
 
-
+    const [message, setMessage] = useState('')
+    const [sendClick, setSendClick] = useState(false)
     const { state, setState } = useContext(gifClickContext)
-    const { gif,setGif} = useContext(gifContext)
+    const { gif, setGif } = useContext(gifContext)
     // console.log(gif)
 
-    const handleClose = ()=>{
-setGif('')
+    const handleClose = () => {
+
+        setGif('')
+        setSendClick(false)
+    }
+    const handleMessage = () => {
+        setSendClick(true)
     }
     return (
         <div>
@@ -36,8 +42,15 @@ setGif('')
                     </div>
                     <div className="input-div">
 
-                        <input type="text" placeholder="Write something here..." className="input-msg" />
+                        <input type="text" value={message} onChange={(e) => { setMessage(e.target.value) }} placeholder="Write something here..." className="input-msg" />
                     </div>
+                    <div className="sendbutton-div">
+                        <button className="send-button" onClick={handleMessage}>send</button>
+                    </div>
+                </div>
+                <div className="message-div">
+                    {sendClick && <h1>{message}</h1>
+                    }
                 </div>
                 <div className="image-div">
                     {gif ? <img src={gif} alt='' className="large-image" >
@@ -62,7 +75,7 @@ setGif('')
                         <button className="buttons" onClick={() => {
                             setState(!state)
                         }} ><i class="material-icons icon3">gif</i>
-                        GIF</button>
+                            GIF</button>
                         <button className="buttons"><i class="fa fa-calendar icon4" aria-hidden="true"></i>tag friends</button>
                     </div>
 

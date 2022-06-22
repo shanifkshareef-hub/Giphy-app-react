@@ -38,7 +38,7 @@
 }
 .input-div{
     float: left;
-    width: 85%;
+    width: 69%;
     margin-left: 20px;
 }
 
@@ -117,4 +117,22 @@
     font-size: 30px;
     color: #89898991;
     cursor: pointer;
+}
+.send-button{
+    margin-top: 21vh;
+    width: 73px;
+    background: #01d06b;
+    height: 33px;
+    border-radius: 7px;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+}
+.message-div{
+   
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
